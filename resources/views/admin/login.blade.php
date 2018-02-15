@@ -9,18 +9,12 @@
         <form action="{{ route('login') }}" method="post">
         <div class="row">
                 <div class="col-md-6 mb-3">
-                    <label for="firstName">Email</label>
-                    <input type="text" class="form-control" id="email" placeholder="" value="" required="">
-                    <div class="invalid-feedback">
-                        Valid first name is required.
-                    </div>
+                    <label for="email">Email</label>
+                    <input type="text" class="form-control" id="email" name="email" placeholder="" value="" required="">
                 </div>
                 <div class="col-md-6 mb-3">
-                    <label for="lastName">Password</label>
-                    <input type="text" class="form-control" id="password" placeholder="" value="" required="">
-                    <div class="invalid-feedback">
-                        Valid last name is required.
-                    </div>
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" name="password" placeholder="" value="" required="">
                 </div>
             </div>
 
