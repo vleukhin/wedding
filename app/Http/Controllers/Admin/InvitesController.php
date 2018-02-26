@@ -10,10 +10,10 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 
-class IndexController extends Controller
+class InvitesController extends Controller
 {
     public function index()
     {
-        return view('admin.app');
+        return view('admin.invites.index');
     }
 }

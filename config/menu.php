@@ -11,6 +11,11 @@ return [
             'title' => 'Главная',
             'route' => 'admin.index',
             'icon' => 'home',
+        ],
+        [
+            'title' => 'Приглашения',
+            'route' => 'admin.invites.index',
+            'icon' => 'envelope',
         ]
     ]
 ];
