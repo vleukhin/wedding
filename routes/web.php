@@ -15,15 +15,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::as('login.form')->get('login', 'Auth\LoginController@showLoginForm');
 Route::as('login')->post('login', 'Auth\LoginController@login');
+Route::as('login.form')->get('login', 'Auth\LoginController@showLoginForm');
+Route::as('logout')->get('logout', 'Auth\LoginController@logout');
 
 Route::middleware(['auth'])
     ->prefix('admin')
     ->namespace('Admin')
-    ->as('admin')
+    ->as('admin.index')
     ->group(function () {
-        Route::get('/', function () {
-            return 'test';
-        });
+        Route::get('/', 'IndexController@index');
     });
