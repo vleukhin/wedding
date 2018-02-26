@@ -19,6 +19,7 @@ class CreateInvitesTable extends Migration
             $table->string('name');
             $table->boolean('multiple')->default(false);
             $table->boolean('accepted')->default(false);
+            $table->unsignedInteger('views')->default(0);
             $table->timestamps();
         });
     }
