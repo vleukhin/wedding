@@ -261,62 +261,6 @@
         </div>
     </div>
 </div>
-<div id="feedback" class="feedback-wrp">
-    <div class="feedback">
-        <div class="title">Книга пожеланий</div>
-        <div class="info">
-            Оставь свое пожелание и мы поместим его в нашу Книгу пожеланий <br />и будем бережно хранить ее и перечитывать :)
-        </div>
-        <div class="row">
-            <div class="col-md-6 col-left clear">
-                <form action="#" class="clear">
-                    <input type="text" name="name" placeholder="Имя">
-                    <textarea name="message" placeholder="Текст"></textarea>
-                    <div class="clear"></div>
-                    <input type="submit" value="Отправить">
-                </form>
-            </div>
-            <div class="col-md-6 col-right">
-                <div class="book-wrp">
-                    <div class="messages">
-                        <div class="row">
-                            <div class="name">Родители</div>
-                            <div class="message">У каждого человека есть мечта – найти свою половинку. Мы рады,что вы это сделали!</div>
-                        </div>
-                        <div class="row">
-                            <div class="name">Родители</div>
-                            <div class="message">У каждого человека есть мечта – найти свою половинку. Мы рады,что вы это сделали!</div>
-                        </div>
-                        <div class="row">
-                            <div class="name">Родители</div>
-                            <div class="message">У каждого человека есть мечта – найти свою половинку. Мы рады,что вы это сделали!</div>
-                        </div>
-                        <div class="row">
-                            <div class="name">Родители</div>
-                            <div class="message">У каждого человека есть мечта – найти свою половинку. Мы рады,что вы это сделали!</div>
-                        </div>
-                        <div class="row">
-                            <div class="name">Родители</div>
-                            <div class="message">У каждого человека есть мечта – найти свою половинку. Мы рады,что вы это сделали!</div>
-                        </div>
-                        <div class="row">
-                            <div class="name">Родители</div>
-                            <div class="message">У каждого человека есть мечта – найти свою половинку. Мы рады,что вы это сделали!</div>
-                        </div>
-                        <div class="row">
-                            <div class="name">Родители</div>
-                            <div class="message">У каждого человека есть мечта – найти свою половинку. Мы рады,что вы это сделали!</div>
-                        </div>
-                        <div class="row">
-                            <div class="name">Родители</div>
-                            <div class="message">У каждого человека есть мечта – найти свою половинку. Мы рады,что вы это сделали!</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 <div class="registration-wrp">
     <div class="registration">
         <div class="col-md-6 col-left">
