@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('app');
+    return view('welcome');
 });
 
 Route::as('login')->post('login', 'Auth\LoginController@login');

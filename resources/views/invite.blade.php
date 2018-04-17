@@ -1,4 +1,13 @@
-{{--Created by Viktor Leukhin--}}
-{{--Tel: +7-926-797-5419--}}
-{{--E-mail: vleukhin@ya.ru--}}
 @extends('app')
+
+@section('content')
+    @include('inc.header', ['with_menu' => true])
+    @include('inc.history')
+    @include('inc.ceremony')
+    @include('inc.inviting')
+    @include('inc.questioning')
+    @include('inc.gallery')
+    @include('inc.inst')
+    @include('inc.registration')
+    @include('inc.banket')
+@endsection

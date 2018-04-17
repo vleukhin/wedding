@@ -102,6 +102,10 @@ class InviteController extends Controller
                     0 => 'Нет',
                 ]);
             });
+
+            $grid->actions(function ($actions) {
+                $actions->append('<a href="/invite/'. $actions->row->uid.'" target="_blank"><i class="fa fa-eye"></i></a>');
+            });
         });
     }
 
@@ -114,7 +118,11 @@ class InviteController extends Controller
     {
         return Admin::form(Invite::class, function (Form $form) {
             $form->text('name', 'Имя:');
-            $form->switch('multiple', 'Приглашение для двоих');
+            $form->switch('multiple', 'Для двоих');
+            $form->radio('sex', 'Пол')->options( [
+                1 => 'М',
+                0 => 'Ж',
+            ]);
             $form->hidden('uid');
 
             $form->display('created_at', 'Created At');
