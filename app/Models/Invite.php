@@ -15,7 +15,7 @@ class Invite extends BaseModel
         'sex' => 'int',
     ];
 
-    public function getName(): string
+    public function getTitle(): string
     {
         if ($this->multiple) {
             $prefix = 'Дорогие';
