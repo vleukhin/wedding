@@ -83,6 +83,9 @@ class InviteController extends Controller
             $grid->accepted('Принято')->display(function ($accepted) {
                 return $accepted ? 'Да' : 'Нет';
             });
+            $grid->respect('Уважительное обращение')->display(function ($accepted) {
+                return $accepted ? 'Да' : 'Нет';
+            });
             $grid->column('views', 'Просмотры');
 
             $grid->created_at();
@@ -93,6 +96,11 @@ class InviteController extends Controller
                 $filter->equal('uid');
 
                 $filter->in('accepted', 'Принято')->radio([
+                    1 => 'Да',
+                    0 => 'Нет',
+                ]);
+
+                $filter->in('respect', 'Уважительное обращение')->radio([
                     1 => 'Да',
                     0 => 'Нет',
                 ]);
@@ -119,6 +127,7 @@ class InviteController extends Controller
         return Admin::form(Invite::class, function (Form $form) {
             $form->text('name', 'Имя:');
             $form->switch('multiple', 'Для двоих');
+            $form->switch('respect', 'Уважительное обращение');
             $form->radio('sex', 'Пол')->options( [
                 1 => 'М',
                 0 => 'Ж',

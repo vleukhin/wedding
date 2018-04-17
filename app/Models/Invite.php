@@ -12,7 +12,9 @@ class Invite extends BaseModel
     protected $table = 'invites';
 
     protected $casts = [
-        'sex' => 'int',
+        'sex'      => 'int',
+        'respect'  => 'bool',
+        'multiple' => 'bool',
     ];
 
     public function getTitle(): string
@@ -26,6 +28,22 @@ class Invite extends BaseModel
         }
 
         return $prefix . ' ' . $this->name;
+    }
+
+    public function getText(string $single, string $multiple, string $single_respect = ''): string
+    {
+        if (empty($single_respect)){
+            $single_respect = $multiple;
+        }
+
+        switch (true) {
+            case $this->multiple:
+                return $multiple;
+            case $this->respect:
+                return $single_respect;
+            default:
+                return $single;
+        }
     }
 
 }

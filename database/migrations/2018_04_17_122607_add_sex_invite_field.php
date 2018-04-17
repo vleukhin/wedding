@@ -15,6 +15,7 @@ class AddSexInviteField extends Migration
     {
         Schema::table('invites', function (Blueprint $table){
             $table->integer('sex')->after('name')->default(0);
+            $table->boolean('respect')->after('sex')->default(false);
         });
     }
 
@@ -27,6 +28,7 @@ class AddSexInviteField extends Migration
     {
         Schema::table('invites', function (Blueprint $table){
             $table->dropColumn('sex');
+            $table->dropColumn('respect');
         });
     }
 }
