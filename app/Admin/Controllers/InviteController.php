@@ -74,11 +74,12 @@ class InviteController extends Controller
     protected function grid()
     {
         return Admin::grid(Invite::class, function (Grid $grid) {
-
             $grid->id('ID')->sortable();
             $grid->column('uid', 'UID');
             $grid->column('name', 'Имя');
-            $grid->column('multiple', 'Для двоих');
+            $grid->multiple('Для двоих')->display(function ($multiple) {
+                return $multiple ? 'Да' : 'Нет';
+            });
             $grid->accepted('Принято')->display(function ($accepted) {
                 return $accepted ? 'Да' : 'Нет';
             });
@@ -86,6 +87,21 @@ class InviteController extends Controller
 
             $grid->created_at();
             $grid->updated_at();
+
+            $grid->filter(function ($filter) {
+                $filter->like('name', 'Имя');
+                $filter->equal('uid');
+
+                $filter->in('accepted', 'Принято')->radio([
+                    1 => 'Да',
+                    0 => 'Нет',
+                ]);
+
+                $filter->in('multiple', 'Для двоих')->radio([
+                    1 => 'Да',
+                    0 => 'Нет',
+                ]);
+            });
         });
     }
 
