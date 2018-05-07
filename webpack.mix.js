@@ -13,4 +13,5 @@ let mix = require('laravel-mix');
 
 mix.js('resources/assets/js/app.js', 'public/js')
    .sass('resources/assets/sass/app.scss', 'public/css')
-   .sass('resources/assets/sass/admin/app.scss', 'public/css/admin');
+   .sass('resources/assets/sass/admin/app.scss', 'public/css/admin')
+   .sass('./node_modules/mdi/scss/materialdesignicons.scss', 'public/css/mdi.css');

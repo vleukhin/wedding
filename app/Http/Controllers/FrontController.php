@@ -8,6 +8,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Invite;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 class FrontController extends Controller
@@ -22,5 +23,10 @@ class FrontController extends Controller
         return view('invite', [
             'invite' => $invite,
         ]);
+    }
+
+    public function saveSurvey(Request $request, Invite $invite)
+    {
+        dd($request->all());
     }
 }

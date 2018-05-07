@@ -46,4 +46,9 @@ class Invite extends BaseModel
         }
     }
 
+    public function getNames()
+    {
+        return explode(' и ', $this->name);
+    }
+
 }

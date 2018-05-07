@@ -11,7 +11,9 @@
     <!-- Bootstrap -->
     <link href="/css/bootstrap.css" rel="stylesheet">
     <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/mdi.css" rel="stylesheet">
     <link href="/css/jquery.mCustomScrollbar.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css" rel="stylesheet">
     <!-- <link href="js/jquery.formstyler.css" rel="stylesheet"> -->
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -20,18 +22,18 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jquery.formstyler.min.js"></script>
+    <script src="/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="/js/imgLiquid-min.js"></script>
 </head>
 <body>
 
 @yield('content')
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="/js/bootstrap.min.js"></script>
-<script src="/js/jquery.formstyler.min.js"></script>
-<script src="/js/jquery.mCustomScrollbar.concat.min.js"></script>
-<script src="/js/imgLiquid-min.js"></script>
 
 <script type="text/javascript" src="/js/2gis.js"></script>
 
@@ -78,34 +80,6 @@
         });
 
         $(".imgLiquidFill").imgLiquid();
-
-        $(".inp-radio input:radio").styler();
-        $(".radios input:radio").styler();
-
-        $('.inp-radio input:radio').change(function() {
-            if ($(this).is(':checked')) {
-                $('.inp-radio input:radio').closest('label').removeClass("checked");
-                $(this).closest('label').addClass('checked');
-            }
-        });
-        $('.car input:radio').change(function() {
-            if ($(this).is(':checked')) {
-                $('.car input:radio').closest('label').removeClass("checked");
-                $(this).closest('label').addClass('checked');
-            }
-        });
-        $('.food input:radio').change(function() {
-            if ($(this).is(':checked')) {
-                $('.food input:radio').closest('label').removeClass("checked");
-                $(this).closest('label').addClass('checked');
-            }
-        });
-        $('.drink input:radio').change(function() {
-            if ($(this).is(':checked')) {
-                $('.drink input:radio').closest('label').removeClass("checked");
-                $(this).closest('label').addClass('checked');
-            }
-        });
 
         $('.bxslider').bxSlider({
             auto: false,
