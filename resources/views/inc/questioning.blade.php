@@ -4,13 +4,13 @@
         <form action="{{ route('survey', $invite->uid) }}" method="POST">
             <div class="row inp-radio">
                 <div class="col-md-6 col-left clear coming accept">
-                    <label>Конечно, {{ $invite->getText('я буду', 'мы будем', 'я буду') }} <input type="radio" name="accept" style="display: none;"></label>
+                    <label>Конечно, {{ $invite->getText('я буду', 'мы будем', 'я буду') }} <input type="radio" name="accept" style="display: none;" value="1"></label>
                 </div>
                 <div class="col-md-6 col-right clear coming decline">
-                    <label>{{ $invite->getText('Я не приду', 'Мы не придем','Я не приду') }}<input type="radio" name="decline" style="display: none;"></label>
+                    <label>{{ $invite->getText('Я не приду', 'Мы не придем','Я не приду') }}<input type="radio" name="accept" style="display: none;" value="0"></label>
                 </div>
             </div>
-            <div id="survey">
+            <div id="survey" style="display: none;">
                 <div class="info">Пожалуйста, чтобы все прошло идеально, {{ $invite->getText('ответь', 'ответьте') }} еще на несколько вопросов</div>
                 @if (!$invite->multiple)
                     <div class="row radios">
@@ -21,7 +21,7 @@
                     <div class="title">{{ $invite->getNames()[0] }}</div>
                     <div class="row radios">
                         @include('inc.survey.meal', ['invite' => $invite, 'index' => 0])
-                        @include('inc.survey.drink', ['invite' => $invite, 'index' => 1])
+                        @include('inc.survey.drink', ['invite' => $invite, 'index' => 0])
                     </div>
                     <div class="title">{{ $invite->getNames()[1] }}</div>
                     <div class="row radios">
@@ -31,7 +31,7 @@
                 @endif
             </div>
             <div class="row">
-                <button class="btn">Отправить</button>
+                <button class="btn" disabled>Отправить</button>
             </div>
         </form>
     </div>
@@ -42,10 +42,20 @@
         $(document).ready(function () {
             $('.decline').click(function () {
                 $('#survey').slideUp();
+                $(this).find('label').addClass('checked');
+                $(this).find('input').prop('checked', true);
+                $('.accept').find('label').removeClass('checked');
+                $('[type=radio]').removeAttr('required');
+                $('.btn').removeAttr('disabled');
             });
 
             $('.accept').click(function () {
                 $('#survey').slideDown();
+                $(this).find('label').addClass('checked');
+                $(this).find('input').prop('checked', true);
+                $('.decline').find('label').removeClass('checked');
+                $('[type=radio]').attr('required', 'required');
+                $('.btn').removeAttr('disabled');
             });
         });
     })(window.jQuery);
