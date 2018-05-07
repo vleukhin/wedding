@@ -86,6 +86,12 @@ class InviteController extends Controller
             $grid->respect('Уважительное обращение')->display(function ($accepted) {
                 return $accepted ? 'Да' : 'Нет';
             });
+            $grid->bride_team('Подружка невесты')->display(function ($accepted) {
+                return $accepted ? 'Да' : 'Нет';
+            });
+            $grid->groom_team('Друг жениха')->display(function ($accepted) {
+                return $accepted ? 'Да' : 'Нет';
+            });
             $grid->column('views', 'Просмотры');
 
             $grid->created_at();
@@ -109,10 +115,20 @@ class InviteController extends Controller
                     1 => 'Да',
                     0 => 'Нет',
                 ]);
+
+                $filter->in('bride_team', 'Подружка невесты')->radio([
+                    1 => 'Да',
+                    0 => 'Нет',
+                ]);
+
+                $filter->in('groom_team', 'Друг жениха')->radio([
+                    1 => 'Да',
+                    0 => 'Нет',
+                ]);
             });
 
             $grid->actions(function ($actions) {
-                $actions->append('<a href="/invite/'. $actions->row->uid.'" target="_blank"><i class="fa fa-eye"></i></a>');
+                $actions->append('<a href="/invite/' . $actions->row->uid . '" target="_blank"><i class="fa fa-eye"></i></a>');
             });
         });
     }
@@ -127,8 +143,10 @@ class InviteController extends Controller
         return Admin::form(Invite::class, function (Form $form) {
             $form->text('name', 'Имя:');
             $form->switch('multiple', 'Для двоих');
+            $form->switch('bride_team', 'Подружка невесты');
+            $form->switch('groom_team', 'Друг жениха');
             $form->switch('respect', 'Уважительное обращение');
-            $form->radio('sex', 'Пол')->options( [
+            $form->radio('sex', 'Пол')->options([
                 1 => 'М',
                 0 => 'Ж',
             ]);
