@@ -8,7 +8,6 @@
                     <div class="text">
                         Следи за свадьбой и и выкладывай свои фото с хештегом в нашем Инстаграме!<br /><br />
                         Фотографии со свадьбы можно будет найти в Instagram по хештегу <br /><b>#ВераиВячеславПетровы72</b>
-                        <img class="reload" src="/img/reload.png">
                         <img src="/img/inst-heart.png">
                     </div>
                 </div>

@@ -93,7 +93,7 @@
                 <div class="col-md-6  drink clear">
                     <div class="name">Что {{ $invite->getText('будешь', 'будете') }} пить</div>
                     <div class="pretty p-icon p-curve p-pulse">
-                        <input type="radio" name="drink" value="wine" @if($invite->survey['drink'][0] == 'bird') checked @endif disabled/>
+                        <input type="radio" name="drink" value="wine" @if($invite->survey['drink'][0] == 'wine') checked @endif disabled/>
                         <div class="state p-success">
                             <i class="icon mdi mdi-glass-wine"></i>
                             <label>Вино</label>
