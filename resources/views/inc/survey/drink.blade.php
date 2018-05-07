@@ -32,4 +32,11 @@
             <label>Водку</label>
         </div>
     </div>
+    <div class="pretty p-icon p-curve p-pulse">
+        <input type="radio" name="{{ $name }}" value="none"/>
+        <div class="state p-success">
+            <i class="icon mdi mdi-close"></i>
+            <label>Не пью</label>
+        </div>
+    </div>
 </div>

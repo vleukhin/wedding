@@ -1,4 +1,4 @@
-<div id="header" class="header-wrp wrapper-full clear parallax-window" data-parallax="scroll" data-image-src="/img/header-bg.png">
+<div id="header" class="header-wrp wrapper-full clear parallax-window" data-parallax="scroll" data-image-src="/img/header-bg.jpg">
     <div class="header">
         <div class="menu-wrp clear">
             <div class="menu">
