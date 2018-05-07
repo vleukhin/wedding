@@ -3,7 +3,7 @@
 {{--E-mail: vleukhin@ya.ru--}}
 @if ($invite->accepted)
     <div id="survey">
-        <div class="info">{{ $invite->getText('Твои', 'Ваши') }} ответы на опрос. Для внесения изменений обращайтесь к Вите.</div>
+        <div class="info">{{ $invite->getText('Твои', 'Ваши') }} ответы на опрос. Для внесения изменений {{ $invite->getText('обращайся', 'обращайтесь') }} к Вите.</div>
         @if (!$invite->multiple)
             <div class="row radios">
                 <div class="col-md-6 food clear">
