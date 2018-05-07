@@ -61,6 +61,13 @@
                             <label>Водку</label>
                         </div>
                     </div>
+                    <div class="pretty p-icon p-curve p-pulse">
+                        <input type="radio" name="drink" value="none" @if($invite->survey['drink'] == 'none') checked @endif disabled/>
+                        <div class="state p-danger">
+                            <i class="icon mdi mdi-close"></i>
+                            <label>Не пью</label>
+                        </div>
+                    </div>
                 </div>
             </div>
         @else
@@ -120,6 +127,13 @@
                             <label>Водку</label>
                         </div>
                     </div>
+                    <div class="pretty p-icon p-curve p-pulse">
+                        <input type="radio" name="drink" value="none" @if($invite->survey['drink'][0] == 'none') checked @endif disabled/>
+                        <div class="state p-danger">
+                            <i class="icon mdi mdi-close"></i>
+                            <label>Не пью</label>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="title">{{ $invite->getNames()[1] }}</div>
@@ -151,7 +165,7 @@
                 <div class="col-md-6  drink clear">
                     <div class="name">Что {{ $invite->getText('будешь', 'будете') }} пить</div>
                     <div class="pretty p-icon p-curve p-pulse">
-                        <input type="radio" name="drink1" value="wine" @if($invite->survey['drink'][1] == 'bird') checked @endif disabled/>
+                        <input type="radio" name="drink1" value="wine" @if($invite->survey['drink'][1] == 'wine') checked @endif disabled/>
                         <div class="state p-success">
                             <i class="icon mdi mdi-glass-wine"></i>
                             <label>Вино</label>
@@ -176,6 +190,13 @@
                         <div class="state p-success">
                             <i class="icon mdi mdi-glass-stange"></i>
                             <label>Водку</label>
+                        </div>
+                    </div>
+                    <div class="pretty p-icon p-curve p-pulse">
+                        <input type="radio" name="drink1" value="none" @if($invite->survey['drink'][1] == 'none') checked @endif disabled/>
+                        <div class="state p-danger">
+                            <i class="icon mdi mdi-close"></i>
+                            <label>Не пью</label>
                         </div>
                     </div>
                 </div>

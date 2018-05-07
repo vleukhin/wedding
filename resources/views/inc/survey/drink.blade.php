@@ -34,7 +34,7 @@
     </div>
     <div class="pretty p-icon p-curve p-pulse">
         <input type="radio" name="{{ $name }}" value="none"/>
-        <div class="state p-success">
+        <div class="state p-danger">
             <i class="icon mdi mdi-close"></i>
             <label>Не пью</label>
         </div>
