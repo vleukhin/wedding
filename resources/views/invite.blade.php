@@ -8,6 +8,7 @@
     @include('inc.questioning')
     @include('inc.gallery')
     @include('inc.inst')
+    @include('inc.team')
     @include('inc.registration')
     @include('inc.banket')
 @endsection

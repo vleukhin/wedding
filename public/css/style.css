@@ -1230,6 +1230,12 @@ body .row {
     min-height: 400px;
 }
 
+.dg-map {
+    width: 100%;
+    min-height: 400px;
+}
+
+
 .footer-wrp {
     min-height: 260px;
     background: #E8E8E8;
