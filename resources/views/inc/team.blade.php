@@ -1,7 +1,7 @@
 {{--Created by Viktor Leukhin--}}
 {{--Tel: +7-926-797-5419--}}
 {{--E-mail: vleukhin@ya.ru--}}
-<div class="banket-wrp">
+<div id="groom" class="banket-wrp">
     <div class="banket">
         <div class="col-md-6 col-left">
             <div id="groom_map" class="dg-map"></div>

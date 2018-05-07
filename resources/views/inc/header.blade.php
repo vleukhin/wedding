@@ -6,7 +6,6 @@
                     @if ($with_menu ?? false)
                         <div class="col-md-6 col-left clear">
                             <ul class="clear float-right" class="toplink">
-                                <li><a href="#history" class="toplink">Наша история</a></li>
                                 <li><a href="#ceremony" class="toplink">О церемонии</a></li>
                                 <li><a href="#inviting" class="toplink">Приглашение</a></li>
                             </ul>
@@ -14,8 +13,7 @@
                         <div class="col-md-6 col-right clear">
                             <ul class="clear">
                                 <li><a href="#questioning" class="toplink">Опрос</a></li>
-                                <li><a href="#inst" class="toplink">Наш инстаграм</a></li>
-                                <li><a href="#feedback" class="toplink">Книга пожеланий</a></li>
+                                <li><a href="#groom" class="toplink">Тайминг</a></li>
                             </ul>
                         </div>
                     @endif

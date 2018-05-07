@@ -53,7 +53,7 @@
     jQuery(document).ready(function($) {
         $("a.toplink").click(function() {
             $("html, body").animate({
-                scrollTop: $($(this).attr("href")).offset().top + "px"
+                scrollTop: $($(this).attr("href")).offset().top - 60 + "px"
             }, {
                 duration: 500,
                 easing: "swing"
@@ -72,7 +72,7 @@
         });
         $(window).scroll(function(event) {
             /* Act on the event */
-            if ($(this).scrollTop() >= 959){
+            if ($(this).scrollTop() >= 899){
                 $(".menu-wrp").addClass('fixed2');
             }else{
                 $(".menu-wrp").removeClass('fixed2');
