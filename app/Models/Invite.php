@@ -14,11 +14,13 @@ class Invite extends BaseModel
     protected static $unguarded = true;
 
     protected $casts = [
-        'sex'      => 'int',
-        'respect'  => 'bool',
-        'multiple' => 'bool',
-        'accepted' => 'bool',
-        'survey'   => 'array',
+        'sex'        => 'int',
+        'respect'    => 'bool',
+        'multiple'   => 'bool',
+        'accepted'   => 'bool',
+        'groom_team' => 'bool',
+        'bride_team' => 'bool',
+        'survey'     => 'array',
     ];
 
     public function getTitle(): string
