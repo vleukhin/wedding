@@ -1235,6 +1235,14 @@ body .row {
     min-height: 400px;
 }
 
+.nd_options_display_none{
+    display: none;
+}
+
+.nicdark_custom_gradient{
+    background: #1f1f1f;
+
+}
 
 .footer-wrp {
     min-height: 260px;

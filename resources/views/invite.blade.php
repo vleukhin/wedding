@@ -3,6 +3,7 @@
 @section('content')
     @include('inc.header', ['with_menu' => true])
     {{--@include('inc.history')--}}
+    @include('inc.countdown')
     @include('inc.ceremony')
     @include('inc.inviting')
     @include('inc.questioning')
