@@ -11,10 +11,14 @@ class Invite extends BaseModel
 {
     protected $table = 'invites';
 
+    protected static $unguarded = true;
+
     protected $casts = [
         'sex'      => 'int',
         'respect'  => 'bool',
         'multiple' => 'bool',
+        'accepted' => 'bool',
+        'survey'   => 'array',
     ];
 
     public function getTitle(): string
@@ -32,7 +36,7 @@ class Invite extends BaseModel
 
     public function getText(string $single, string $multiple, string $single_respect = ''): string
     {
-        if (empty($single_respect)){
+        if (empty($single_respect)) {
             $single_respect = $multiple;
         }
 

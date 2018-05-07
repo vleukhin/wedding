@@ -15,7 +15,7 @@ class FrontController extends Controller
 {
     public function showInvite(Invite $invite)
     {
-        if (Auth::guard('admin')->guest()){
+        if (Auth::guard('admin')->guest()) {
             $invite->views++;
             $invite->save();
         }
@@ -27,6 +27,14 @@ class FrontController extends Controller
 
     public function saveSurvey(Request $request, Invite $invite)
     {
-        dd($request->all());
+        $invite->update([
+            'accepted' => $request->input('accept', false),
+            'survey'   => [
+                'meal'  => $request->input('meal'),
+                'drink' => $request->input('drink'),
+            ],
+        ]);
+
+        return redirect()->back();
     }
 }

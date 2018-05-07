@@ -13,7 +13,7 @@
                         </div>
                         <div class="col-md-6 col-right clear">
                             <ul class="clear">
-                                <li><a href="#gallery" class="toplink">Галерея</a></li>
+                                <li><a href="#questioning" class="toplink">Опрос</a></li>
                                 <li><a href="#inst" class="toplink">Наш инстаграм</a></li>
                                 <li><a href="#feedback" class="toplink">Книга пожеланий</a></li>
                             </ul>
