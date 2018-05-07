@@ -15,18 +15,18 @@
                 @if (!$invite->multiple)
                     <div class="row radios">
                         @include('inc.survey.meal', ['invite' => $invite])
-                        @include('inc.survey.drink')
+                        @include('inc.survey.drink', ['invite' => $invite])
                     </div>
                 @else
                     <div class="title">{{ $invite->getNames()[0] }}</div>
                     <div class="row radios">
                         @include('inc.survey.meal', ['invite' => $invite, 'index' => 0])
-                        @include('inc.survey.drink')
+                        @include('inc.survey.drink', ['invite' => $invite, 'index' => 1])
                     </div>
                     <div class="title">{{ $invite->getNames()[1] }}</div>
                     <div class="row radios">
                         @include('inc.survey.meal', ['invite' => $invite, 'index' => 1])
-                        @include('inc.survey.drink')
+                        @include('inc.survey.drink', ['invite' => $invite, 'index' => 1])
                     </div>
                 @endif
             </div>
