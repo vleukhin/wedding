@@ -94,8 +94,8 @@
 
         DG.then(function () {
             map = DG.map('map1', {
-                center: [57.147229,65.553167],
-                zoom: 14,
+                center: [55.337932069477574,86.09230041503908],
+                zoom: 12,
                 scrollWheelZoom: false
             });
             mapCenter = map.getCenter();
@@ -105,59 +105,13 @@
                 iconSize: [27, 37],
                 iconAnchor: [14, 37],
                 popupAnchor: [0, 0],
-                // shadowUrl: '',
-                // shadowRetinaUrl: '',
-                // shadowSize: [68, 95],
-                // shadowAnchor: [22, 94]
             });
-            // var myIcon2 = DG.icon({
-            //     iconUrl: 'img/zags.png',
-            //     iconRetinaUrl: 'img/zags.png',
-            //     iconSize: [66, 92],
-            //     iconAnchor: [33, 92],
-            //     popupAnchor: [0, 0],
-            //     // shadowUrl: '',
-            //     // shadowRetinaUrl: '',
-            //     // shadowSize: [68, 95],
-            //     // shadowAnchor: [22, 94]
-            // });
 
-            DG.marker([57.147229,65.553167], {icon: myIcon}).addTo(map).bindPopup("<p style=\"text-align:center;\">ЗАГС</p> <p style=\"text-align:center;\">Жемчужный зал</p>");
-            //         	 	DG.marker([57.147229,65.57], {icon: myIcon2}).addTo(map).bindPopup("<p style=\"text-align:center;\">ЗАГС</p> <p style=\"text-align:center;\">Жемчужный зал</p>");
+            DG.marker([55.31533,86.0167], {icon: myIcon})
+                .addTo(map)
+                .bindPopup("<p style=\"text-align:center;\">Парк отель «Аквариум»</p> <p style=\"text-align:center;\">Большая летняя беседка</p>");
         });
-        DG.then(function () {
-            map2 = DG.map('map2', {
-                center: [57.147229,65.553167],
-                zoom: 14,
-                scrollWheelZoom: false
-            });
-            mapCenter2 = map2.getCenter();
-            var myIcon2 = DG.icon({
-                iconUrl: '/img/marker.png',
-                iconRetinaUrl: '/img/marker.png',
-                iconSize: [27, 37],
-                iconAnchor: [14, 37],
-                popupAnchor: [0, 0],
-                // shadowUrl: '',
-                // shadowRetinaUrl: '',
-                // shadowSize: [68, 95],
-                // shadowAnchor: [22, 94]
-            });
-            // var myIcon2 = DG.icon({
-            //     iconUrl: 'img/zags.png',
-            //     iconRetinaUrl: 'img/zags.png',
-            //     iconSize: [66, 92],
-            //     iconAnchor: [33, 92],
-            //     popupAnchor: [0, 0],
-            //     // shadowUrl: '',
-            //     // shadowRetinaUrl: '',
-            //     // shadowSize: [68, 95],
-            //     // shadowAnchor: [22, 94]
-            // });
 
-            DG.marker([57.147229,65.553167], {icon: myIcon2}).addTo(map2).bindPopup("Ресторан<br /> <p style=\"text-align:center;\">ЧАЙКА</p>");
-            //         	 	DG.marker([57.147229,65.57], {icon: myIcon2}).addTo(map).bindPopup("<p style=\"text-align:center;\">ЗАГС</p> <p style=\"text-align:center;\">Жемчужный зал</p>");
-        });
         ph = $(".inst .col-right img");
         ph2 = $(".inst .col-right img");
 
