@@ -29,6 +29,7 @@
     <script src="/js/jquery.formstyler.min.js"></script>
     <script src="/js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="/js/imgLiquid-min.js"></script>
+    <script src="/js/app.js"></script>
 </head>
 <body>
 

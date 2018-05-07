@@ -20,8 +20,12 @@ class FrontController extends Controller
             $invite->save();
         }
 
+        $survey_done = session()->get('survey_done', null);
+        session()->forget('survey_done');
+
         return view('invite', [
-            'invite' => $invite,
+            'invite'      => $invite,
+            'survey_done' => $survey_done,
         ]);
     }
 
@@ -35,6 +39,9 @@ class FrontController extends Controller
             ],
         ]);
 
-        return redirect()->back();
+
+        session()->put('survey_done', $request->input('accept', 0));
+
+        return redirect()->route('invite', [$invite->uid]);
     }
 }

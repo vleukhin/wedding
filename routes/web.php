@@ -20,6 +20,6 @@ Route::as('login.form')->get('login', 'Auth\LoginController@showLoginForm');
 Route::as('logout')->get('logout', 'Auth\LoginController@logout');
 
 Route::as('invite')->get('invite/{invite_uid}', 'FrontController@showInvite');
-Route::as('invite')
+Route::as('survey')
     ->name('survey')
     ->post('invite/{invite_uid}', 'FrontController@saveSurvey');
