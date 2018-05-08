@@ -8,9 +8,9 @@
                 <div class="wpb_wrapper">
 
                     <div class="nd_options_section nd_options_position_relative ">
-                        <img style="top:px;" alt="" class="nd_options_position_absolute nd_options_left_0" width="50" src="http://www.nicdarkthemes.com/themes/wedding/wp/demo/wedding-day/wp-content/uploads/sites/9/2016/10/icon-14.png">
+                        <img style="top:0;" alt="" class="nd_options_position_absolute nd_options_left_0" width="50" src="http://www.nicdarkthemes.com/themes/wedding/wp/demo/wedding-day/wp-content/uploads/sites/9/2016/10/icon-14.png">
                         <div style="padding-left:70px;" class="nd_options_section nd_options_box_sizing_border_box">
-                            <h3 class="nd_options_first_font" style="margin:; color:#ffffff; font-size:20px;line-height:20px;"> Обратный отсчет до</h3>
+                            <h3 class="nd_options_first_font" style="margin:0; color:#ffffff; font-size:20px;line-height:20px;"> Обратный отсчет до</h3>
                             <p class="nd_options_first_font" style="margin:10px 0px 0px 0px; color:#ffffff; font-size:30px;line-height:30px;">свадьбы</p>
                         </div>
                     </div>
