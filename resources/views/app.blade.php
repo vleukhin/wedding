@@ -8,6 +8,7 @@
 
     <meta property="og:title" content="Приглашение на свадьбу" />
     <meta property="og:image" content="http://wedding.local/img/photo5.png" />
+    <meta property="og:type" content="website" />
     @yield('meta')
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Приглашение на свадьбу</title>
