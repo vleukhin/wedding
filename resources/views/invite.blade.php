@@ -1,8 +1,11 @@
 @extends('app')
 
+@section('meta')
+    <meta property="og:description " content="{{ $invite->getTitle() }}, приглашаем {{ $invite->getText('тебя', 'вас','Вас') }} на нашу свадьбу" />
+@endsection
+
 @section('content')
     @include('inc.header', ['with_menu' => true])
-    {{--@include('inc.history')--}}
     @include('inc.countdown')
     @include('inc.ceremony')
     @include('inc.inviting')
