@@ -1247,7 +1247,11 @@ body .row {
     padding-bottom: 50px !important;
     width: 300px !important;
     float: right;
+}
 
+.vc_column_container > .vc_column-inner {
+     padding-left: 0 !important;
+     padding-right: 0 !important;
 }
 
 .footer-wrp {
