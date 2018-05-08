@@ -1,7 +1,7 @@
 @extends('app')
 
 @section('meta')
-    <meta property="og:description " content="{{ $invite->getTitle() }}, приглашаем {{ $invite->getText('тебя', 'вас','Вас') }} на нашу свадьбу" />
+    <meta property="og:description" content="{{ $invite->getTitle() }}, приглашаем {{ $invite->getText('тебя', 'вас','Вас') }} на нашу свадьбу" />
 @endsection
 
 @section('content')
