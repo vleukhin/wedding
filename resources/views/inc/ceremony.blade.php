@@ -9,20 +9,26 @@
                     <div class="title">О церемонии</div>
                     <div class="border"></div>
                     <div class="info">
-                        Наша свадьба<br /> будет проводиться по двум адресам
+                        Наша свадьба<br /> будет проводиться в парке-отеле «Аквариум»
+                        <br>Кемерово, ул. Механизаторов 15а
                     </div>
                     <div class="places">
                         <div class="place1 place">
-                            <div class="title">Дворец бракосочетания</div>
-                            <div class="info">(Жемчужный зал)<br />ул. Малыгина, 79</div>
+                            <div class="title">Сбор гостей</div>
+                            <div class="info">16:00</div>
                         </div>
                         <div class="place1 place">
-                            <div class="title">База отдыха «Адмирал»</div>
-                            <div class="info">Тюмень, пос. Боровский,<br />Лесной переулок, д. 4, стр.1</div>
+                            <div class="title">Торжественная регистрация</div>
+                            <div class="info">16:30</div>
+                        </div>
+                        <div class="place1 place">
+                            <div class="title">Банкет</div>
+                            <div class="info">17:30</div>
                         </div>
                     </div>
                     <div class="text">
-                        После регистрации будет организаван трансфер до базы отдыха.<br />Если остались вопросы, звоните <br />8 934 876 8742
+                        ДОРОГИЕ ДРУЗЬЯ,
+                        Просим Вас не дарить нам цветы. Лучше мягкие игрушки с бирками, что бы отдать их в детский дом.
                     </div>
                 </div>
             </div>

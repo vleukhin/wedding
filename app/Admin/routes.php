@@ -13,4 +13,6 @@ Route::group([
     $router->get('/', 'HomeController@index');
     $router->resource('invites', 'InviteController');
 
+    $router->get('survey', 'SurveyController@index');
+
 });

@@ -631,7 +631,7 @@ body .row {
     position: relative;
 }
 
-.questioning-wrp .questioning > .title {
+.questioning-wrp .title {
     position: relative;
     display: block;
     width: 110px;
@@ -694,6 +694,7 @@ body .row {
     color: #1f1f1f;
     text-align: center;
     margin-top: 45px;
+    margin-bottom: 30px;
 }
 
 .questioning-wrp .questioning .info input {
@@ -708,7 +709,7 @@ body .row {
     position: relative;
     display: block;
     width: 800px;
-    margin: 45px auto 0;
+    margin: 30px auto 0;
 }
 
 .questioning-wrp .questioning .row.radios {
@@ -1227,6 +1228,30 @@ body .row {
 .banket-wrp .banket > .col-left #map2 {
     width: 100%;
     min-height: 400px;
+}
+
+.dg-map {
+    width: 100%;
+    min-height: 400px;
+}
+
+.nd_options_display_none{
+    display: none;
+}
+
+.nicdark_custom_gradient{
+    background: #1f1f1f;
+}
+.vc_custom_1476698205485 {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+    width: 300px !important;
+    float: right;
+}
+
+.vc_column_container > .vc_column-inner {
+     padding-left: 0 !important;
+     padding-right: 0 !important;
 }
 
 .footer-wrp {

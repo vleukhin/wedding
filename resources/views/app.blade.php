@@ -10,8 +10,12 @@
 
     <!-- Bootstrap -->
     <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="http://www.nicdarkthemes.com/themes/wedding/wp/demo/wedding-day/wp-content/uploads/sites/9/js_composer/js_composer_front_custom.css?ver=4.12.1" rel="stylesheet">
+    <link href="http://www.nicdarkthemes.com/themes/wedding/wp/demo/wedding-day/wp-content/plugins/nd-shortcodes/css/style.css?ver=4.6.1" rel="stylesheet">
     <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/mdi.css" rel="stylesheet">
     <link href="/css/jquery.mCustomScrollbar.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css" rel="stylesheet">
     <!-- <link href="js/jquery.formstyler.css" rel="stylesheet"> -->
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -20,18 +24,19 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jquery.formstyler.min.js"></script>
+    <script src="/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="/js/imgLiquid-min.js"></script>
+    <script src="/js/app.js"></script>
 </head>
 <body>
 
 @yield('content')
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="/js/bootstrap.min.js"></script>
-<script src="/js/jquery.formstyler.min.js"></script>
-<script src="/js/jquery.mCustomScrollbar.concat.min.js"></script>
-<script src="/js/imgLiquid-min.js"></script>
 
 <script type="text/javascript" src="/js/2gis.js"></script>
 
@@ -51,7 +56,7 @@
     jQuery(document).ready(function($) {
         $("a.toplink").click(function() {
             $("html, body").animate({
-                scrollTop: $($(this).attr("href")).offset().top + "px"
+                scrollTop: $($(this).attr("href")).offset().top - 60 + "px"
             }, {
                 duration: 500,
                 easing: "swing"
@@ -70,7 +75,7 @@
         });
         $(window).scroll(function(event) {
             /* Act on the event */
-            if ($(this).scrollTop() >= 959){
+            if ($(this).scrollTop() >= 899){
                 $(".menu-wrp").addClass('fixed2');
             }else{
                 $(".menu-wrp").removeClass('fixed2');
@@ -78,34 +83,6 @@
         });
 
         $(".imgLiquidFill").imgLiquid();
-
-        $(".inp-radio input:radio").styler();
-        $(".radios input:radio").styler();
-
-        $('.inp-radio input:radio').change(function() {
-            if ($(this).is(':checked')) {
-                $('.inp-radio input:radio').closest('label').removeClass("checked");
-                $(this).closest('label').addClass('checked');
-            }
-        });
-        $('.car input:radio').change(function() {
-            if ($(this).is(':checked')) {
-                $('.car input:radio').closest('label').removeClass("checked");
-                $(this).closest('label').addClass('checked');
-            }
-        });
-        $('.food input:radio').change(function() {
-            if ($(this).is(':checked')) {
-                $('.food input:radio').closest('label').removeClass("checked");
-                $(this).closest('label').addClass('checked');
-            }
-        });
-        $('.drink input:radio').change(function() {
-            if ($(this).is(':checked')) {
-                $('.drink input:radio').closest('label').removeClass("checked");
-                $(this).closest('label').addClass('checked');
-            }
-        });
 
         $('.bxslider').bxSlider({
             auto: false,
@@ -120,8 +97,8 @@
 
         DG.then(function () {
             map = DG.map('map1', {
-                center: [57.147229,65.553167],
-                zoom: 14,
+                center: [55.337932069477574,86.09230041503908],
+                zoom: 12,
                 scrollWheelZoom: false
             });
             mapCenter = map.getCenter();
@@ -131,59 +108,13 @@
                 iconSize: [27, 37],
                 iconAnchor: [14, 37],
                 popupAnchor: [0, 0],
-                // shadowUrl: '',
-                // shadowRetinaUrl: '',
-                // shadowSize: [68, 95],
-                // shadowAnchor: [22, 94]
             });
-            // var myIcon2 = DG.icon({
-            //     iconUrl: 'img/zags.png',
-            //     iconRetinaUrl: 'img/zags.png',
-            //     iconSize: [66, 92],
-            //     iconAnchor: [33, 92],
-            //     popupAnchor: [0, 0],
-            //     // shadowUrl: '',
-            //     // shadowRetinaUrl: '',
-            //     // shadowSize: [68, 95],
-            //     // shadowAnchor: [22, 94]
-            // });
 
-            DG.marker([57.147229,65.553167], {icon: myIcon}).addTo(map).bindPopup("<p style=\"text-align:center;\">ЗАГС</p> <p style=\"text-align:center;\">Жемчужный зал</p>");
-            //         	 	DG.marker([57.147229,65.57], {icon: myIcon2}).addTo(map).bindPopup("<p style=\"text-align:center;\">ЗАГС</p> <p style=\"text-align:center;\">Жемчужный зал</p>");
+            DG.marker([55.31533,86.0167], {icon: myIcon})
+                .addTo(map)
+                .bindPopup("<p style=\"text-align:center;\">Парк отель «Аквариум»</p> <p style=\"text-align:center;\">Большая летняя беседка</p>");
         });
-        DG.then(function () {
-            map2 = DG.map('map2', {
-                center: [57.147229,65.553167],
-                zoom: 14,
-                scrollWheelZoom: false
-            });
-            mapCenter2 = map2.getCenter();
-            var myIcon2 = DG.icon({
-                iconUrl: '/img/marker.png',
-                iconRetinaUrl: '/img/marker.png',
-                iconSize: [27, 37],
-                iconAnchor: [14, 37],
-                popupAnchor: [0, 0],
-                // shadowUrl: '',
-                // shadowRetinaUrl: '',
-                // shadowSize: [68, 95],
-                // shadowAnchor: [22, 94]
-            });
-            // var myIcon2 = DG.icon({
-            //     iconUrl: 'img/zags.png',
-            //     iconRetinaUrl: 'img/zags.png',
-            //     iconSize: [66, 92],
-            //     iconAnchor: [33, 92],
-            //     popupAnchor: [0, 0],
-            //     // shadowUrl: '',
-            //     // shadowRetinaUrl: '',
-            //     // shadowSize: [68, 95],
-            //     // shadowAnchor: [22, 94]
-            // });
 
-            DG.marker([57.147229,65.553167], {icon: myIcon2}).addTo(map2).bindPopup("Ресторан<br /> <p style=\"text-align:center;\">ЧАЙКА</p>");
-            //         	 	DG.marker([57.147229,65.57], {icon: myIcon2}).addTo(map).bindPopup("<p style=\"text-align:center;\">ЗАГС</p> <p style=\"text-align:center;\">Жемчужный зал</p>");
-        });
         ph = $(".inst .col-right img");
         ph2 = $(".inst .col-right img");
 

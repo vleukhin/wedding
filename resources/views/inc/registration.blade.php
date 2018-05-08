@@ -3,10 +3,10 @@
         <div class="col-md-6 col-left">
             <div class="registration-text">
                 <div class="text-wrp">
-                    <div class="title">Регистрация</div>
+                    <div class="title">Банкет</div>
                     <div class="text">
-                        Дворец бракосочетания<br/>(Жемчужный зал)<br/>ул. Малыгина, 79
-                        <img src="/img/rings.png">
+                        Парк отель Аквариум<br/>Большая летняя беседка<br/>ул. Механизаторов, 15а
+                        <img src="/img/bottle.png">
                     </div>
                 </div>
             </div>
