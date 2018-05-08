@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta property="og:title" content="Приглашение на свадьбу" />
-    <meta property="og:image" content="http://wedding.local/img/photo5.png" />
+    <meta property="og:image" content="http://wedding.vleukhin.xyz/img/photo5.png" />
     <meta property="og:type" content="website" />
     @yield('meta')
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
