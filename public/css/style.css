@@ -1294,9 +1294,15 @@ img {
         margin-left: auto;
         margin-right: auto;
     }
+    .header-wrp .header .menu-wrp .menu .row .col-md-6 ul li a{
+        line-height: 32px;
+    }
 
     .header-wrp .header .menu-wrp .menu {
-        height: 160px;
+        height: 70px;
+    }
+    .header-wrp .header .menu-wrp .menu .logo{
+        display: none;
     }
 
     .header-wrp .header .title {
