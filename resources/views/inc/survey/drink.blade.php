@@ -5,10 +5,10 @@
 <div class="col-md-6  drink clear">
     <div class="name">Что {{ $invite->getText('будешь', 'будете') }} пить</div>
     <div class="pretty p-icon p-curve p-pulse">
-        <input type="radio" name="{{ $name }}" value="wine"/>
+        <input type="radio" name="{{ $name }}" value="wiskey"/>
         <div class="state p-success">
-            <i class="icon mdi mdi-glass-wine"></i>
-            <label>Вино</label>
+            <i class="icon mdi mdi-cup"></i>
+            <label>Виски</label>
         </div>
     </div>
     <div class="pretty p-icon p-curve p-pulse">
@@ -19,10 +19,10 @@
         </div>
     </div>
     <div class="pretty p-icon p-curve p-pulse">
-        <input type="radio" name="{{ $name }}" value="wiskey"/>
+        <input type="radio" name="{{ $name }}" value="wine"/>
         <div class="state p-success">
-            <i class="icon mdi mdi-cup"></i>
-            <label>Виски</label>
+            <i class="icon mdi mdi-glass-wine"></i>
+            <label>Вино</label>
         </div>
     </div>
     <div class="pretty p-icon p-curve p-pulse">

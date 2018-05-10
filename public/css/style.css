@@ -642,6 +642,7 @@ body .row {
     text-transform: uppercase;
     padding-bottom: 20px;
     border-bottom: 2px solid #232D22;
+    margin-top: 30px;
 }
 
 .questioning-wrp .questioning .row.inp-radio .col-md-6 label {
@@ -693,7 +694,6 @@ body .row {
     color: #1f1f1f;
     text-align: center;
     margin-top: 45px;
-    margin-bottom: 30px;
 }
 
 .questioning-wrp .questioning .info input {
@@ -731,6 +731,7 @@ body .row {
     width: 100%;
     clear: both;
     margin-bottom: 15px;
+    font-weight: bold;
 }
 
 .questioning-wrp .questioning .row.radios .quest-radio {
@@ -1480,5 +1481,9 @@ img {
     }
     .banket-wrp .banket .col-left{
         order: 1;
+    }
+
+    .drink .name {
+        margin-top: 15px;
     }
 }
