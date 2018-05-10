@@ -33,7 +33,7 @@ class Invite extends BaseModel
             $prefix = 'Дорогая';
         }
 
-        return $prefix . ' ' . $this->name;
+        return $prefix . '<br/>' . $this->name;
     }
 
     public function getText(string $single, string $multiple, string $single_respect = ''): string
