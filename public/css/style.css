@@ -1283,12 +1283,15 @@ img {
         display: flex;
         flex-direction: column;
     }
-    .banket-wrp .banket .col-left{
+
+    .banket-wrp .banket .col-left {
         order: 2;
     }
-    .banket-wrp .banket .col-left{
+
+    .banket-wrp .banket .col-left {
         order: 1;
     }
+
     .header-wrp {
         min-height: 600px;
     }
@@ -1338,7 +1341,7 @@ img {
         text-align: center;
     }
 
-    .header-wrp .header .title span{
+    .header-wrp .header .title span {
         margin-left: 0;
     }
 
@@ -1484,5 +1487,61 @@ img {
 
     .drink .name {
         margin-top: 15px;
+    }
+
+    .inviting-wrp .inviting > .col-left .inviting-text {
+        padding: 15px;
+        min-height: 0;
+    }
+
+    .inviting-wrp {
+        min-height: 0;
+    }
+
+    .inviting-wrp .inviting > .col-left .inviting-text .text-wrp {
+        display: block;
+    }
+
+    .inviting-wrp .inviting > .col-left .inviting-text .text-wrp .title {
+        margin-bottom: 15px;
+    }
+
+    .inviting-wrp .inviting > .col-left .inviting-text .text-wrp .text {
+        padding: 0;
+        line-height: 21px
+    }
+
+    .questioning-wrp {
+        padding-top: 1px;
+    }
+
+    .ceremony-wrp .ceremony > .col-right .ceremony-text .text-wrp {
+        display: block;
+    }
+
+    .ceremony-wrp .ceremony > .col-right .ceremony-text .text-wrp .places {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .ceremony-wrp {
+        min-height: 0;
+    }
+
+    .ceremony-wrp .ceremony > .col-right .ceremony-text {
+        min-height: 0;
+    }
+    .inst-wrp .inst > .col-left .inst-text .text-wrp .text img{
+        margin-top: 30px;
+    }
+
+    .inst-wrp .inst > .col-left .inst-text .text-wrp .text{
+        margin-bottom: 0;
+    }
+
+    .inst-wrp,
+    .inst-wrp .inst > .col-md-6,
+    .inst-wrp .inst > .col-left .inst-text{
+        min-height: 0;
     }
 }
