@@ -106,8 +106,16 @@
         $(".feedback-wrp .feedback .book-wrp .messages").mCustomScrollbar({scrollButtons:{enable: true}});
 
         DG.then(function () {
+            var loc;
+            if (screen.width < 480) {
+                loc = [55.32,86.075];
+            }
+            else {
+                loc = [55.31533,86.0167];
+            }
+
             map = DG.map('map1', {
-                center: [55.337932069477574,86.09230041503908],
+                center: loc,
                 zoom: 12,
                 scrollWheelZoom: false
             });
