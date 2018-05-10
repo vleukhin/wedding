@@ -3,7 +3,7 @@
         <div class="col-md-6 col-left clear">
             <div class="inviting-text">
                 <div class="text-wrp">
-                    <div class="title">{{ $invite->getTitle() }}</div>
+                    <div class="title">{!! $invite->getTitle() !!}</div>
                     <div class="text">
                         7 июля 2018 года может пройти <br />
                         как обычный день<br />
