@@ -168,7 +168,6 @@ ul {
 }
 
 body {
-    min-width: 400px;
     background: #FFF;
 }
 
@@ -1435,7 +1434,7 @@ img {
     margin: 30px auto 0;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 750px) {
     .nd_options_countdown .nd_options_font_size_45 {
         font-size: 35px;
     }
