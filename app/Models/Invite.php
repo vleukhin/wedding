@@ -7,6 +7,8 @@
 
 namespace App\Models;
 
+use Illuminate\Support\Facades\DB;
+
 class Invite extends BaseModel
 {
     protected $table = 'invites';
@@ -55,6 +57,16 @@ class Invite extends BaseModel
     public function getNames()
     {
         return explode(' и ', $this->name);
+    }
+
+    public static function getPeopleCount(): int
+    {
+        return Invite::select(DB::raw('sum(if(multiple=1, 2, 1)) as count'))->first()->count;
+    }
+
+    public static function getPeopleAgreedCount(): int
+    {
+        return Invite::select(DB::raw('sum(if(multiple=1, 2, 1)) as count'))->where('accepted', 1)->first()->count;
     }
 
 }

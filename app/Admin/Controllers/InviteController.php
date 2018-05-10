@@ -25,8 +25,9 @@ class InviteController extends Controller
     {
         return Admin::content(function (Content $content) {
 
-            $content->header('header');
-            $content->description('description');
+            $content->header('Приглашения');
+            $desc = 'Всего людей приглашено: %d. Принято приглашений: %d';
+            $content->description(sprintf($desc, Invite::getPeopleCount(), Invite::getPeopleAgreedCount()));
 
             $content->body($this->grid());
         });
