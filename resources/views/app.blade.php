@@ -15,8 +15,8 @@
 
     <!-- Bootstrap -->
     <link href="/css/bootstrap.css" rel="stylesheet">
-    <link href="http://www.nicdarkthemes.com/themes/wedding/wp/demo/wedding-day/wp-content/uploads/sites/9/js_composer/js_composer_front_custom.css?ver=4.12.1" rel="stylesheet">
-    <link href="http://www.nicdarkthemes.com/themes/wedding/wp/demo/wedding-day/wp-content/plugins/nd-shortcodes/css/style.css?ver=4.6.1" rel="stylesheet">
+    <link href="/css/js_composer_front_custom.css?ver=4.12.1" rel="stylesheet">
+    <link href="/css/style_custom.css" rel="stylesheet">
     <link href="/css/style.css" rel="stylesheet">
     <link href="/css/mdi.css" rel="stylesheet">
     <link href="/css/jquery.mCustomScrollbar.css" rel="stylesheet">
@@ -87,7 +87,12 @@
             }
         });
 
-        $(".imgLiquidFill").imgLiquid();
+        if (screen.width < 480) {
+            $('#inst .imgLiquidFill').imgLiquid();
+        }
+        else {
+            $(".imgLiquidFill").imgLiquid();
+        }
 
         $('.bxslider').bxSlider({
             auto: false,
@@ -101,8 +106,16 @@
         $(".feedback-wrp .feedback .book-wrp .messages").mCustomScrollbar({scrollButtons:{enable: true}});
 
         DG.then(function () {
+            var loc;
+            if (screen.width < 480) {
+                loc = [55.32,86.075];
+            }
+            else {
+                loc = [55.31533,86.0167];
+            }
+
             map = DG.map('map1', {
-                center: [55.337932069477574,86.09230041503908],
+                center: loc,
                 zoom: 12,
                 scrollWheelZoom: false
             });

@@ -1235,13 +1235,14 @@ body .row {
     min-height: 400px;
 }
 
-.nd_options_display_none{
+.nd_options_display_none {
     display: none;
 }
 
-.nicdark_custom_gradient{
+.nicdark_custom_gradient {
     background: #1f1f1f;
 }
+
 .vc_custom_1476698205485 {
     padding-top: 50px !important;
     padding-bottom: 50px !important;
@@ -1249,9 +1250,18 @@ body .row {
     float: right;
 }
 
+img {
+    max-width: 100%;
+}
+
+.vc_row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
 .vc_column_container > .vc_column-inner {
-     padding-left: 0 !important;
-     padding-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 
 .footer-wrp {
@@ -1285,8 +1295,16 @@ body .row {
         margin-right: auto;
     }
 
+    .header-wrp .header .menu-wrp .menu .row .col-md-6 ul li a {
+        line-height: 32px;
+    }
+
     .header-wrp .header .menu-wrp .menu {
-        height: 160px;
+        height: 70px;
+    }
+
+    .header-wrp .header .menu-wrp .menu .logo {
+        display: none;
     }
 
     .header-wrp .header .title {
@@ -1413,6 +1431,53 @@ body .row {
     border-radius: 0;
 }
 
-.questioning .btn{
+.questioning .btn {
     margin: 30px auto 0;
+}
+
+@media (max-width: 480px) {
+    .nd_options_countdown .nd_options_font_size_45 {
+        font-size: 35px;
+    }
+
+    .nd_options_countdown h2 {
+        font-size: 17px;
+    }
+
+    .vc_custom_1476698205485 {
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+        float: none;
+    }
+
+    .imgLiquid img {
+        visibility: visible !important;
+    }
+
+    .ceremony-wrp .ceremony > .col-md-6,
+    .inviting-wrp .inviting > .col-md-6 {
+        min-height: auto;
+    }
+
+    .inviting-wrp .inviting .imgLiquid {
+        display: none;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .banket-wrp .banket {
+        display: flex;
+        flex-direction: column;
+    }
+    .banket-wrp .banket .col-left{
+        order: 2;
+    }
+    .banket-wrp .banket .col-left{
+        order: 1;
+    }
 }
