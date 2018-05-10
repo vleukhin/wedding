@@ -87,7 +87,7 @@
             }
         });
 
-        if (screen.width < 480) {
+        if (screen.width < 750) {
             $('#inst .imgLiquidFill').imgLiquid();
         }
         else {
@@ -107,7 +107,7 @@
 
         DG.then(function () {
             var loc;
-            if (screen.width < 480) {
+            if (screen.width < 750) {
                 loc = [55.32,86.075];
             }
             else {
