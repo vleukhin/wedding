@@ -288,7 +288,7 @@ body .row {
     margin: 225px auto 0;
     font-family: NefelibataBrushCanvas;
     font-size: 130px;
-    color: #E8E8E8;
+    color: #fff;
     line-height: 120px;
     -webkit-transform: rotate(-5deg);
     -moz-transform: rotate(-5deg);
@@ -1275,8 +1275,7 @@ img {
 
 @media (max-width: 991px) {
     .header-wrp {
-        min-height: 800px;
-        height: 800px;
+        min-height: 600px;
     }
 
     .header-wrp .header .menu-wrp .menu .row .col-md-6 ul {
@@ -1308,12 +1307,15 @@ img {
 
     .header-wrp .header .title {
         font-size: 60px;
-        width: 370px;
+        width: 100%;
         line-height: 60px;
+        margin-top: 140px;
+        transform: none;
+        text-align: center;
     }
 
-    .header-wrp .header .title span {
-        margin-left: 80px;
+    .header-wrp .header .title span{
+        margin-left: 0;
     }
 
     .history-wrp .history > .col-left .history-text {
