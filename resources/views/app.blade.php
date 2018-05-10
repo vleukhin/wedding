@@ -15,8 +15,8 @@
 
     <!-- Bootstrap -->
     <link href="/css/bootstrap.css" rel="stylesheet">
-    <link href="http://www.nicdarkthemes.com/themes/wedding/wp/demo/wedding-day/wp-content/uploads/sites/9/js_composer/js_composer_front_custom.css?ver=4.12.1" rel="stylesheet">
-    <link href="http://www.nicdarkthemes.com/themes/wedding/wp/demo/wedding-day/wp-content/plugins/nd-shortcodes/css/style.css?ver=4.6.1" rel="stylesheet">
+    <link href="/css/js_composer_front_custom.css?ver=4.12.1" rel="stylesheet">
+    <link href="/css/style_custom.css" rel="stylesheet">
     <link href="/css/style.css" rel="stylesheet">
     <link href="/css/mdi.css" rel="stylesheet">
     <link href="/css/jquery.mCustomScrollbar.css" rel="stylesheet">

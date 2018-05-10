@@ -51,19 +51,19 @@
                 date: nd_options_end_date,
                 render: function (data) {
                     $(this.el).html("<div class=\"  nd_options_section nd_options_text_align_center \"><!--***START 1***-->" +
-                        "<div style=\" background-color: ; \" class=\" nd_options_width_100_percentage_iphone_port " + nd_options_width + " " + nd_options_display_years + "  \">" +
+                        "<div style=\" background-color: ; \" class=\"  " + nd_options_width + " " + nd_options_display_years + "  \">" +
                         "<h1 style=\" color: #ffffff \" class=\" nd_options_margin_0 nd_options_margin_top_40 nd_options_margin_bottom_10 nd_options_font_size_45 nd_options_padding_0 \">" + this.leadingZeros(data.years, 2) + "</h1>" +
                         "<h2 style=\" color: ; \" class=\" nd_options_margin_0 nd_options_margin_bottom_40 nd_options_display_inline_block nd_options_padding_0 \" >YEARS</h2></div><!--***START 2***-->" +
-                        "<div style=\" background-color: #394432; \" class=\" nd_options_width_100_percentage_iphone_port " + nd_options_width + " " + nd_options_display_days + "  \">" +
+                        "<div style=\" background-color: #394432; \" class=\"  " + nd_options_width + " " + nd_options_display_days + "  \">" +
                         "<h1 style=\" color: #ffffff \" class=\" nd_options_margin_0 nd_options_margin_top_40 nd_options_margin_bottom_10 nd_options_font_size_45 nd_options_padding_0 \">" + this.leadingZeros(data.days, 3) + "</h1>" +
                         "<h2 style=\" color: #ffffff; background-color: #394432 \" class=\" nd_options_margin_0 nd_options_margin_bottom_40 nd_options_display_inline_block nd_options_padding_0 \" >DAYS</h2>" +
-                        "</div><!--***START 3***--><div style=\" background-color: #44513b; \" class=\" nd_options_width_100_percentage_iphone_port " + nd_options_width + " " + nd_options_display_hours + "  \">" +
+                        "</div><!--***START 3***--><div style=\" background-color: #44513b; \" class=\"  " + nd_options_width + " " + nd_options_display_hours + "  \">" +
                         "<h1 style=\" color: #ffffff \" class=\" nd_options_margin_0 nd_options_margin_top_40 nd_options_margin_bottom_10 nd_options_font_size_45 nd_options_padding_0 \">" + this.leadingZeros(data.hours, 2) + "</h1>" +
                         "<h2 style=\" color: #ffffff; background-color: #44513b \" class=\" nd_options_margin_0 nd_options_margin_bottom_40 nd_options_display_inline_block nd_options_padding_0 \" >HOURS</h2></div><!--***START 4***-->" +
-                        "<div style=\" background-color: #4f5f45; \" class=\" nd_options_width_100_percentage_iphone_port " + nd_options_width + " " + nd_options_display_minutes + "  \">" +
+                        "<div style=\" background-color: #4f5f45; \" class=\"  " + nd_options_width + " " + nd_options_display_minutes + "  \">" +
                         "<h1 style=\" color: #ffffff \" class=\" nd_options_margin_0 nd_options_margin_top_40 nd_options_margin_bottom_10 nd_options_font_size_45 nd_options_padding_0 \">" + this.leadingZeros(data.min, 2) + "</h1>" +
                         "<h2 style=\" color: #ffffff; background-color: #4f5f45 \" class=\" nd_options_margin_0 nd_options_margin_bottom_40 nd_options_display_inline_block nd_options_padding_0 \" >MINUTES</h2></div><!--***START 5***-->" +
-                        "<div style=\" background-color: #5b6c4f; \" class=\" nd_options_width_100_percentage_iphone_port " + nd_options_width + "  " + nd_options_display_seconds + "  \">" +
+                        "<div style=\" background-color: #5b6c4f; \" class=\"  " + nd_options_width + "  " + nd_options_display_seconds + "  \">" +
                         "<h1 style=\" color: #ffffff \" class=\" nd_options_margin_0 nd_options_margin_top_40 nd_options_margin_bottom_10 nd_options_font_size_45 nd_options_padding_0 \">" + this.leadingZeros(data.sec, 2) + "</h1>" +
                         "<h2 style=\" color: #ffffff; background-color: #5b6c4f \" class=\" nd_options_margin_0 nd_options_margin_bottom_40 nd_options_display_inline_block nd_options_padding_0 \" >SECONDS</h2></div></div>");
                 }
