@@ -61,12 +61,12 @@ class Invite extends BaseModel
 
     public static function getPeopleCount(): int
     {
-        return Invite::select(DB::raw('sum(if(multiple=1, 2, 1)) as count'))->first()->count;
+        return Invite::select(DB::raw('sum(if(multiple=1, 2, 1)) as count'))->first()->count ?? 0;
     }
 
     public static function getPeopleAgreedCount(): int
     {
-        return Invite::select(DB::raw('sum(if(multiple=1, 2, 1)) as count'))->where('accepted', 1)->first()->count;
+        return Invite::select(DB::raw('sum(if(multiple=1, 2, 1)) as count'))->where('accepted', 1)->first()->count ?? 0;
     }
 
 }
