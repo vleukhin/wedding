@@ -57,7 +57,7 @@
 
             DG.marker([55.35833145429777, 86.087064743042], {icon: myIcon})
                 .addTo(groom_map)
-                .bindPopup("<p style=\"text-align:center;\">Томь Ривер Плаза</p> <p style=\"text-align:center;\">xxx номер</p>");
+                .bindPopup("<p style=\"text-align:center;\">Томь Ривер Плаза</p>");
         });
     });
 </script>
