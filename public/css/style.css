@@ -1544,4 +1544,8 @@ img {
     .inst-wrp .inst > .col-left .inst-text{
         min-height: 0;
     }
+
+    .inst5{
+        display: none;
+    }
 }

@@ -31,7 +31,7 @@
             <div class="row row-2">
                 <div class="col-md-6">
                     <div class="row row-3">
-                        <div class="col-md-12 imgLiquid imgLiquidFill">
+                        <div class="col-md-12 imgLiquid imgLiquidFill inst5">
                             <img src="/img/inst5.png">
                         </div>
                         <div class="col-xs-6 imgLiquid imgLiquidFill">
