@@ -87,7 +87,12 @@
             }
         });
 
-        $(".imgLiquidFill").imgLiquid();
+        if (screen.width < 480) {
+            $('#inst .imgLiquidFill').imgLiquid();
+        }
+        else {
+            $(".imgLiquidFill").imgLiquid();
+        }
 
         $('.bxslider').bxSlider({
             auto: false,

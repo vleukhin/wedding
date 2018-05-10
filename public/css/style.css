@@ -1450,4 +1450,18 @@ img {
         width: 100%;
         float: none;
     }
+    .imgLiquid img {
+        visibility: visible !important;
+    }
+    .ceremony-wrp .ceremony > .col-md-6,
+    .inviting-wrp .inviting > .col-md-6
+    {
+        min-height: auto;
+    }
+    .inviting-wrp .inviting .imgLiquid {
+        display: none;
+    }
+    footer{
+        display: none;
+    }
 }
