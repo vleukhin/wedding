@@ -86,12 +86,6 @@ class InviteController extends Controller
             $grid->respect('Уважительное обращение')->display(function ($accepted) {
                 return $accepted ? 'Да' : 'Нет';
             });
-            $grid->bride_team('Подружка невесты')->display(function ($accepted) {
-                return $accepted ? 'Да' : 'Нет';
-            });
-            $grid->groom_team('Друг жениха')->display(function ($accepted) {
-                return $accepted ? 'Да' : 'Нет';
-            });
             $grid->column('views', 'Просмотры');
 
             $grid->created_at();
