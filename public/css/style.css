@@ -1275,8 +1275,31 @@ img {
 }
 
 @media (max-width: 991px) {
+    footer {
+        display: none;
+    }
+
+    .banket-wrp .banket {
+        display: flex;
+        flex-direction: column;
+    }
+    .banket-wrp .banket .col-left{
+        order: 2;
+    }
+    .banket-wrp .banket .col-left{
+        order: 1;
+    }
     .header-wrp {
         min-height: 600px;
+    }
+
+    .vc_custom_1476698205485 {
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+        float: none;
     }
 
     .header-wrp .header .menu-wrp .menu .row .col-md-6 ul {
@@ -1443,16 +1466,7 @@ img {
     }
 
     .nd_options_countdown h2 {
-        font-size: 17px;
-    }
-
-    .vc_custom_1476698205485 {
-        padding-top: 20px !important;
-        padding-bottom: 20px !important;
-        margin: 0 auto;
-        text-align: center;
-        width: 100%;
-        float: none;
+        font-size: 16px;
     }
 
     .imgLiquid img {
@@ -1466,21 +1480,6 @@ img {
 
     .inviting-wrp .inviting .imgLiquid {
         display: none;
-    }
-
-    footer {
-        display: none;
-    }
-
-    .banket-wrp .banket {
-        display: flex;
-        flex-direction: column;
-    }
-    .banket-wrp .banket .col-left{
-        order: 2;
-    }
-    .banket-wrp .banket .col-left{
-        order: 1;
     }
 
     .drink .name {

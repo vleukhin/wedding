@@ -108,7 +108,7 @@
         DG.then(function () {
             var loc;
             if (screen.width < 750) {
-                loc = [55.32,86.075];
+                loc = [55.333,86.065];
             }
             else {
                 loc = [55.31533,86.0167];
