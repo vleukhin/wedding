@@ -66,7 +66,7 @@
     <div class="col-xs-1">
         <ul class="list-group">
             <li class="list-group-item active">
-                Вока <span class="badge">{{ $drink['vodka']['count'] }}</span>
+                Водка <span class="badge">{{ $drink['vodka']['count'] }}</span>
             </li>
             @foreach($drink['vodka']['list'] as $name)
                 <li class="list-group-item">{{ $name }}</li>
