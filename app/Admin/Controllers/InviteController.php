@@ -81,7 +81,19 @@ class InviteController extends Controller
                 return $multiple ? 'Да' : 'Нет';
             });
             $grid->accepted('Принято')->display(function ($accepted) {
-                return $accepted ? 'Да' : 'Нет';
+                switch (true){
+                    case $accepted === 1:
+                        $res = 'Да';
+                        break;
+                    case $accepted === 0:
+                        $res = 'Нет';
+                        break;
+                    default:
+                        $res = 'Не отвечено';
+                        break;
+                }
+
+                return $res;
             });
             $grid->respect('Уважительное обращение')->display(function ($accepted) {
                 return $accepted ? 'Да' : 'Нет';
@@ -101,27 +113,28 @@ class InviteController extends Controller
                 $filter->like('name', 'Имя');
                 $filter->equal('uid');
 
-                $filter->in('accepted', 'Принято')->radio([
+                $filter->equal('accepted', 'Принято')->radio([
+                    -1 => 'Не отвечено',
                     1 => 'Да',
                     0 => 'Нет',
                 ]);
 
-                $filter->in('respect', 'Уважительное обращение')->radio([
+                $filter->equal('respect', 'Уважительное обращение')->radio([
                     1 => 'Да',
                     0 => 'Нет',
                 ]);
 
-                $filter->in('multiple', 'Для двоих')->radio([
+                $filter->equal('multiple', 'Для двоих')->radio([
                     1 => 'Да',
                     0 => 'Нет',
                 ]);
 
-                $filter->in('bride_team', 'Подружка невесты')->radio([
+                $filter->equal('bride_team', 'Подружка невесты')->radio([
                     1 => 'Да',
                     0 => 'Нет',
                 ]);
 
-                $filter->in('groom_team', 'Друг жениха')->radio([
+                $filter->equal('groom_team', 'Друг жениха')->radio([
                     1 => 'Да',
                     0 => 'Нет',
                 ]);

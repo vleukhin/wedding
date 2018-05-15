@@ -17,7 +17,6 @@ class Invite extends BaseModel
         'sex'        => 'int',
         'respect'    => 'bool',
         'multiple'   => 'bool',
-        'accepted'   => 'bool',
         'groom_team' => 'bool',
         'bride_team' => 'bool',
         'survey'     => 'array',
