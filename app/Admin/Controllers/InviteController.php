@@ -78,9 +78,7 @@ class InviteController extends Controller
             $grid->id('ID')->sortable();
             $grid->column('uid', 'UID');
             $grid->column('name', 'Имя');
-            $grid->multiple('Для двоих')->display(function ($multiple) {
-                return $multiple ? 'Да' : 'Нет';
-            });
+
             $grid->accepted('Принято')->display(function ($accepted) {
                 switch (true){
                     case $accepted === 1:
@@ -96,9 +94,7 @@ class InviteController extends Controller
 
                 return $res;
             });
-            $grid->respect('Уважительное обращение')->display(function ($accepted) {
-                return $accepted ? 'Да' : 'Нет';
-            });
+
             $grid->column('views', 'Просмотры');
 
             $grid->created_at();
