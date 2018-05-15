@@ -4,13 +4,10 @@ namespace App\Admin\Controllers;
 
 use App\Models\Invite;
 
-use Encore\Admin\Form;
-use Encore\Admin\Grid;
 use Encore\Admin\Facades\Admin;
 use Encore\Admin\Layout\Content;
 use App\Http\Controllers\Controller;
 use Encore\Admin\Controllers\ModelForm;
-use Illuminate\Support\Facades\Request;
 
 class SurveyController extends Controller
 {
@@ -23,64 +20,49 @@ class SurveyController extends Controller
      */
     public function index()
     {
-        return Admin::content(function (Content $content) {
+        $meal = [
+            'meat' => ['count' => 0, 'list' => []],
+            'fish' => ['count' => 0, 'list' => []],
+            'bird' => ['count' => 0, 'list' => []],
+        ];
 
-            $content->header('header');
-            $content->description('description');
+        $drink = [
+            'wiskey' => ['count' => 0, 'list' => []],
+            'cognac' => ['count' => 0, 'list' => []],
+            'wine'   => ['count' => 0, 'list' => []],
+            'vodka'  => ['count' => 0, 'list' => []],
+            'none'   => ['count' => 0, 'list' => []],
+        ];
 
-            $content->body($this->grid());
+        Invite::where('accepted', 1)->get()->each(function (Invite $invite) use (&$meal, &$drink) {
+            if (is_array($invite->survey['meal'])) {
+                $meal[$invite->survey['meal'][0]]['count']++;
+                $meal[$invite->survey['meal'][1]]['count']++;
+
+                $meal[$invite->survey['meal'][0]]['list'][] = $invite->getNames()[0];
+                $meal[$invite->survey['meal'][1]]['list'][] = $invite->getNames()[1];
+            } else {
+                $meal[$invite->survey['meal']]['count']++;
+                $meal[$invite->survey['meal']]['list'][] = $invite->name;
+            }
+
+            if (is_array($invite->survey['drink'])) {
+                $drink[$invite->survey['drink'][0]]['count']++;
+                $drink[$invite->survey['drink'][1]]['count']++;
+
+                $drink[$invite->survey['drink'][0]]['list'][] = $invite->getNames()[0];
+                $drink[$invite->survey['drink'][1]]['list'][] = $invite->getNames()[1];
+            } else {
+                $drink[$invite->survey['drink']]['count']++;
+                $drink[$invite->survey['drink']]['list'][] = $invite->name;
+            }
+        });
+
+        return Admin::content(function (Content $content) use ($meal, $drink) {
+
+            $content->header('Результаты опроса');
+
+            $content->body(view('admin.poll', compact('meal', 'drink')));
         });
     }
-
-    /**
-     * Make a grid builder.
-     *
-     * @return Grid
-     */
-    protected function grid()
-    {
-        return Admin::grid(Invite::class, function (Grid $grid) {
-            $grid->id('ID')->sortable();
-            $grid->column('uid', 'UID');
-            $grid->column('name', 'Имя');
-            $grid->multiple('Для двоих')->display(function ($multiple) {
-                return $multiple ? 'Да' : 'Нет';
-            });
-            $grid->accepted('Принято')->display(function ($accepted) {
-                return $accepted ? 'Да' : 'Нет';
-            });
-            $grid->respect('Уважительное обращение')->display(function ($accepted) {
-                return $accepted ? 'Да' : 'Нет';
-            });
-            $grid->column('views', 'Просмотры');
-
-            $grid->created_at();
-            $grid->updated_at();
-
-            $grid->filter(function ($filter) {
-                $filter->like('name', 'Имя');
-                $filter->equal('uid');
-
-                $filter->in('accepted', 'Принято')->radio([
-                    1 => 'Да',
-                    0 => 'Нет',
-                ]);
-
-                $filter->in('respect', 'Уважительное обращение')->radio([
-                    1 => 'Да',
-                    0 => 'Нет',
-                ]);
-
-                $filter->in('multiple', 'Для двоих')->radio([
-                    1 => 'Да',
-                    0 => 'Нет',
-                ]);
-            });
-
-            $grid->actions(function ($actions) {
-                $actions->append('<a href="/invite/'. $actions->row->uid.'" target="_blank"><i class="fa fa-eye"></i></a>');
-            });
-        });
-    }
-
 }
