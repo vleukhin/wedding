@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('invite/QoRN73XK0VH0aAa9', function () {
+    return view('nn');
+});
+
 Route::as('login')->post('login', 'Auth\LoginController@login');
 Route::as('login.form')->get('login', 'Auth\LoginController@showLoginForm');
 Route::as('logout')->get('logout', 'Auth\LoginController@logout');
