@@ -7,10 +7,13 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Facades\DB;
 
 class Invite extends BaseModel
 {
+	use SoftDeletes;
+
     protected $table = 'invites';
 
     protected static $unguarded = true;
