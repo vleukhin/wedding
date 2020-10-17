@@ -36,7 +36,7 @@
         //START counter
         $(function ($) {
             //variables
-            var nd_options_end_date = "July 07, 2018";
+            var nd_options_end_date = "January 16, 2021";
             var nd_options_width = "nd_options_width_25_percentage nd_options_float_left";
 
             //insert the class nd_options_display_none in the var if you wnat to hide the visualization

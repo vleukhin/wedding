@@ -9,8 +9,8 @@
                     <div class="title">О церемонии</div>
                     <div class="border"></div>
                     <div class="info">
-                        Наша свадьба<br /> будет проводиться в парке-отеле «Аквариум»
-                        <br>Кемерово, ул. Механизаторов 15а
+                        Наша свадьба<br /> будет проводиться в ресторане «Hofbrau»
+                        <br>Кемерово, бульвар Строителей 54А
                     </div>
                     <div class="places">
                         <div class="place1 place">

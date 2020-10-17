@@ -22,10 +22,10 @@
                 <div class="logo"></div>
             </div>
         </div>
-        <div class="title">Виктор и<br/> <span>Анастасия</span></div>
+        <div class="title">Евгений и<br/> <span>Лейла</span></div>
         <div class="info">
             <div class="text">Наша свадьба</div>
-            <div class="date">7 июля 2018</div>
+            <div class="date">16 января 2021</div>
         </div>
     </div>
 </div>

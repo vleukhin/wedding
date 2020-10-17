@@ -1,7 +1,7 @@
 <div id="questioning" class="questioning-wrp">
     <div class="questioning">
         <div class="title">Опрос</div>
-        @if ($invite->accepted == -1)
+        @if (is_null($invite->accepted))
             <form action="{{ route('survey', $invite->uid) }}" method="POST">
                 <div class="row inp-radio">
                     <div class="col-md-6 col-left clear coming accept">

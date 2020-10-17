@@ -8,10 +8,9 @@
                 <div class="text-wrp">
                     <div class="title">Банкет</div>
                     <div class="text">
-                        Парк отель «Аквариум»<br/>
-                        Большая летняя беседка<br/>
+                        Ресторан «Hofbrau»<br/>
                         16:00<br/>
-                        ул. Механизаторов, 15а
+                        Кемерово, бульвар Строителей 54А
                         <img src="/img/bottle.png">
                     </div>
                 </div>
