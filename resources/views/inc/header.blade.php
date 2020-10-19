@@ -14,7 +14,7 @@
                             <ul class="clear">
                                 <li><a href="#questioning" class="toplink">Опрос</a></li>
                                 <li><a href="#inst" class="toplink">Наш инстаграм</a></li>
-                                <li><a href="#groom" class="toplink">Тайминг</a></li>
+                                <li><a href="#banket" class="toplink">Банкет</a></li>
                             </ul>
                         </div>
                     @endif

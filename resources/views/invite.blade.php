@@ -11,7 +11,6 @@
     @include('inc.inviting')
     @include('inc.questioning')
     @include('inc.inst')
-    @include('inc.team')
     @include('inc.banket')
     @include('inc.footer')
 

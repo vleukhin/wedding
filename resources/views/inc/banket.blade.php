@@ -9,7 +9,7 @@
                     <div class="title">Банкет</div>
                     <div class="text">
                         Ресторан «Hofbrau»<br/>
-                        16:00<br/>
+                        16:30<br/>
                         Кемерово, бульвар Строителей 54А
                         <img src="/img/bottle.png">
                     </div>

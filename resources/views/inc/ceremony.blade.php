@@ -15,20 +15,12 @@
                     <div class="places">
                         <div class="place1 place">
                             <div class="title">Сбор гостей</div>
-                            <div class="info">16:00</div>
-                        </div>
-                        <div class="place1 place">
-                            <div class="title">Торжественная регистрация</div>
                             <div class="info">16:30</div>
                         </div>
                         <div class="place1 place">
                             <div class="title">Банкет</div>
-                            <div class="info">17:30</div>
+                            <div class="info">17:00</div>
                         </div>
-                    </div>
-                    <div class="text">
-                        ДОРОГИЕ ДРУЗЬЯ,
-                        Просим Вас не дарить нам цветы. Лучше мягкие игрушки с бирками, чтобы отдать их в детский дом.
                     </div>
                 </div>
             </div>

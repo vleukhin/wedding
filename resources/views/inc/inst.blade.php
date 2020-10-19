@@ -7,7 +7,10 @@
                     <div class="border"></div>
                     <div class="text">
                         Следи за свадьбой и выкладывай свои фото с хештегом в нашем Инстаграме!<br /><br />
-                        Фотографии со свадьбы можно будет найти по хештегу <br /><b>#</b>
+                        Фотографии со свадьбы можно будет найти по хештегу <br />
+                        <a href="https://www.instagram.com/explore/tags/liljon/" target="_blank" style="color: inherit">
+                            <b>#liljon</b>
+                        </a>
                         <img src="/img/inst-heart.png">
                     </div>
                 </div>
